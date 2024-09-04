@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Notifications page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <main>
+      <div class="notification">
+        <h1>
+          Notifications
+          <p class="notnum">0</p>
+        </h1>
+        <p class="mark">Mark all as read</p>
+      </div>
+      <div class="seccion">
+        <img
+          class="pfp"
+          src="./assets/images/avatar-mark-webber.webp"
+          alt="PFP"
+        />
+        <div class="seccion1">
+          <p>
+            <strong>Mark Webber</strong> reacted to your recent post
+            <span>My first tournament today! </span><span class="reddot"></span>
+          </p>
+          <small>1m ago</small>
+        </div>
+      </div>
+      <div class="seccion">
+        <img
+          class="pfp"
+          src="./assets/images/avatar-angela-gray.webp"
+          alt="PFP"
+        />
+        <div class="seccion1">
+          <p>
+            <strong>Angela Gray</strong> followed you
+            <span class="reddot"></span>
+          </p>
+          <small>5m ago</small>
+        </div>
+      </div>
+      <div class="seccion">
+        <img
+          class="pfp"
+          src="./assets/images/avatar-jacob-thompson.webp"
+          alt="PFP"
+        />
+        <div class="seccion1">
+          <p>
+            <strong> Jacob Thompson</strong> has joined your group
+            <strong class="chess">Chess Club </strong
+            ><span class="reddot"></span>
+          </p>
+          <small>1 day ago </small>
+        </div>
+      </div>
+      <div class="seccion" style="background-color: white">
+        <img
+          class="pfp"
+          src="./assets/images/avatar-rizky-hasanuddin.webp"
+          alt="PFP"
+        />
+        <div class="seccion1">
+          <p>
+            <strong>Rizky Hasanuddin</strong>
+            sent you a private message
+            <span class="reddot" style="display: none"></span>
+          </p>
+          <small>5 days ago</small>
+          <p class="message">
+            Hello, thanks for setting up the Chess Club. I've been a member for
+            a few weeks now and I'm already having lots of fun and improving my
+            game.
+          </p>
+        </div>
+      </div>
+      <div class="seccion" style="background-color: white">
+        <img
+          class="pfp"
+          src="./assets/images/avatar-kimberly-smith.webp"
+          alt="PFP"
+        />
+        <div class="seccion1">
+          <p>
+            <strong>Kimberly Smith</strong> commented on your picture
+            <span class="reddot" style="display: none"></span>
+          </p>
+          <small>1 week ago</small>
+        </div>
+      </div>
+      <div class="seccion" style="background-color: white">
+        <img
+          class="pfp"
+          src="./assets/images/avatar-nathan-peterson.webp"
+          alt="PFP"
+        />
+        <div class="seccion1">
+          <p>
+            <strong>Nathan Peterson</strong> reacted to your recent post
+            <span>5 end-game strategies to increase your win rate </span
+            ><span class="reddot" style="display: none"></span>
+          </p>
+          <small>2 weeks ago </small>
+        </div>
+      </div>
+      <div class="seccion" style="background-color: white">
+        <img class="pfp" src="./assets/images/avatar-anna-kim.webp" alt="PFP" />
+        <div class="seccion1">
+          <p>
+            <strong>Anna Kim</strong> left the group
+            <strong class="chess">Chess Club </strong
+            ><span class="reddot" style="display: none"></span>
+          </p>
+          <small>2 weeks ago</small>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.linkedin.com/in/chimi-rinzin-20178a291/"
+          >Chimi Rinzin</a
+        >.
+      </div>
+    </footer>
+  </body>
+  <script src="./index.js"></script>
+</html>

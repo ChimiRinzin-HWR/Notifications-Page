@@ -1,0 +1,154 @@
+@import url(./reset.css);
+
+:root{
+    --Red: hsl(1, 90%, 64%);
+    --Blue: hsl(219, 85%, 26%);
+
+    --White: hsl(0, 0%, 100%);
+    --Verylightgrayishblue: hsl(210, 60%, 98%);
+    --Lightgrayishblue1: hsl(211, 68%, 94%);
+    --Lightgrayishblue2: hsl(205, 33%, 90%);
+    --Grayishblue: hsl(219, 14%, 63%);
+    --Darkgrayishblue: hsl(219, 12%, 42%);
+    --Verydarkblue: hsl(224, 21%, 14%);
+}
+html,body{
+    font-family: 'Plus Jakarta Sans';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color:  var(--Verylightgrayishblue);
+}
+main{
+    background-color: var(--White);
+    padding: 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px var(--Lightgrayishblue2);
+    max-width: 40rem;
+}
+.notification{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 1rem;
+    .mark{
+        font-weight: 700;
+        font-size: 0.9rem;
+        color: var(--Grayishblue);
+        cursor: pointer;
+    }
+}
+.mark:hover{
+    color: var(--Blue);
+}
+h1{
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+.notnum{
+    background-color: var(--Blue);
+    font-size: 0.9rem;
+    color: white;
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 0.05rem 0.5rem;
+}
+.seccion{
+    display: flex;
+    background-color: var(--Verylightgrayishblue);
+    margin: 0.5rem 0;
+    padding: 0.6rem 1rem;
+    gap: 0.8rem;
+    font-size: 0.9rem;
+    border-radius: 7px;
+    img{
+        height: 2.5rem;
+    }
+    small{
+        font-size: 0.8rem;
+        color: var(--Grayishblue);
+        font-weight: 500;
+    }
+}
+.clicked{
+    background-color: white;
+}
+.seccion1{
+    line-height: 1.2rem;
+    display: flex; 
+    flex-direction: column;
+    position: relative;
+    span{
+        color: var(--Darkgrayishblue);
+        font-weight: 700;
+        cursor: pointer;
+    }
+}
+.seccion strong:hover{
+    color: var(--Blue);
+    cursor: pointer;
+}
+.seccion1 span:hover{
+    color: var(--Blue);
+}
+.reddot{
+    display: inline-block;
+    border-radius: 50%;
+    background-color: var(--Red);
+    vertical-align: middle;
+    height: 0.5rem;
+    width: 0.5rem;
+}
+.chess{
+    color: var(--Blue);
+    font-weight: 800;
+    cursor: pointer;
+}
+.message{
+    padding: 0.8rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    margin: 0.5rem 0 0;
+    border: 1px solid var(--Lightgrayishblue1);
+}
+.message:hover{
+    background-color: var(--Lightgrayishblue1);
+    cursor: pointer;
+}
+.seccionuno{
+    display: flex;
+}
+footer{
+    position: absolute;
+    top: 97%;
+}
+@media screen and (max-width:575px) {
+    html,body{
+        width: 100%;
+        height: 100%;
+    }
+    main{
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        max-width: 100%;
+    }
+    h1{
+        gap: 0.6rem;
+        font-size: 1.2rem;
+    }
+    .notnum{
+        padding: 0.05rem 0.7rem;
+    }
+    .seccion{
+        font-size: 1rem;
+        strong{
+            font-weight: 800;
+        }
+    }
+}
